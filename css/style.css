@@ -97,7 +97,9 @@ section {
 }
 
 .grammar {
+  position: relative;
   margin-bottom: 8px;
+  margin-left: 27px;
     font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 20px;
@@ -106,6 +108,18 @@ section {
 
     color: #FF6B09;
 }
+
+.grammar::before{
+    position: absolute;
+    left: -27px;
+    top: 16px;
+    content:"";
+    width: 20px;
+    height: 2px;
+    background-color: #FF6B09;
+}
+
+
 /* .grammar::before {
   content:'';
   width: 10px;
